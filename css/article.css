@@ -1,0 +1,22 @@
+.article {
+  text-indent: 50px;
+  margin-top: 35px;
+  padding: 0 10px;
+}
+
+.article__header {
+  color: #3d0039;
+  text-align: center;
+}
+
+.article__listItem {
+  color: #4d0049;
+}
+.article__listItemText {
+  color: black;
+}
+.article__highlighted {
+  color: #4d0049;
+  text-align: center;
+  font-size: 18px;
+}

@@ -1,0 +1,13 @@
+.section {
+  max-width: 900px;
+  margin: 20px auto 70px;
+  padding: 6%;
+  text-align: justify;
+  background-color: #f7f7f8;
+  opacity: 0.9;
+}
+
+.section__header {
+  text-align: left;
+  color: #4d0049;
+}
