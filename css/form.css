@@ -4,7 +4,9 @@
 }
 .form__fieldset {
   text-decoration: center;
-  background-color: hsl(215, 11%, 63%);
+  -webkit-box-shadow: inset 4px -15px 38px 3px rgba(66, 68, 90, 1);
+  -moz-box-shadow: inset 4px -15px 38px 3px rgba(66, 68, 90, 1);
+  box-shadow: inset 4px -15px 38px 3px rgba(66, 68, 90, 1);
   border-radius: 10px;
   padding: 30px;
 }
@@ -40,8 +42,9 @@
 .form__labelText {
   margin: 10px 0;
   flex: 1 1 auto;
-  color: #f9f9fa;
+  color: hsl(300, 69%, 20%);
 }
+
 .form__valueUnit {
   display: flex;
   flex-wrap: nowrap;
@@ -64,7 +67,7 @@
 .form__button {
   padding: 10px 30px;
   display: block;
-  margin: 9px auto;
+  margin: 9px 0;
   color: white;
   background-color: #4d0049;
   border-radius: 10px;

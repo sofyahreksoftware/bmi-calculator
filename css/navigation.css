@@ -9,13 +9,6 @@
   justify-content: center;
 }
 
-/* @media (max-width: 767px) {
-  .navigation__list {
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
-} */
-
 .navigation__element {
   border: 1px solid #4d0049;
   background-color: #990091;

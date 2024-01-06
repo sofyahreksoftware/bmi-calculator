@@ -2,13 +2,15 @@ const displayResult = (result, category) => {
   const resultLabel = document.querySelector(".js-resultLabel");
 
   resultLabel.innerHTML = `
-      <p>Your BMI is ${Number(result.toFixed(2)).toLocaleString("pl-PL")}.</p>
+      <p>Your BMI is 
+      <strong>${Number(result.toFixed(2)).toLocaleString("pl-PL")}</strong>.
+      </p>
       <p>${
         category === "underweight" ||
         category === "overweight" ||
         category === "normal weight"
-          ? `You are ${category}.`
-          : `You have an ${category}.`
+          ? `You are <strong>${category}</strong>.`
+          : `You have an <strong>${category}</strong>.`
       }</p>`;
 };
 
