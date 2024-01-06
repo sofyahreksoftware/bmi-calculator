@@ -5,10 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="icon"
-      href="https://i.postimg.cc/qBjrwsdw/BMI-icon.png"
-    />
+    <link rel="icon" href="https://i.postimg.cc/qBjrwsdw/BMI-icon.png" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
       rel="stylesheet"
@@ -27,6 +24,7 @@ https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css
     <link href="css/form.css" rel="stylesheet" />
     <link href="css/navigation.css" rel="stylesheet" />
 
+    <script defer src="js/index.js"></script>
     <script
       type="text/javascript"
       id="MathJax-script"
@@ -134,7 +132,7 @@ https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css
     </section>
 
     <section class="section">
-      <form class="form">
+      <form class="form js-form">
         <fieldset class="form__fieldset">
           <legend class="form__legend">BMI-calculator</legend>
 
@@ -142,33 +140,36 @@ https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css
             ><span class="form__labelText">Enter your height:</span>
             <span class="form__valueUnit">
               <input
-                class="form__input"
+                class="form__input js-height"
                 name="height"
                 type="number"
                 step="0.01"
                 placeholder="1,64"
                 required
+                value="1.64"
               />m</span
             > </label
           ><br />
 
-          <label class="form__label"
+          <label class="form__label js-result"
             ><span class="form__labelText">Enter your weight:</span>
             <span class="form__valueUnit">
               <input
-                class="form__input"
+                class="form__input js-weight"
                 required
                 name="weight"
                 type="number"
                 step="0.001"
                 placeholder="70,000"
                 required
+                value="55"
               />kg</span
             ></label
           >
         </fieldset>
         <button class="form__button">Calculate!</button>
       </form>
+      <p class="result js-resultLabel"></p>
     </section>
   </body>
 </html>
