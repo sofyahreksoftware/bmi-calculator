@@ -1,15 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>BMI-calculator</title>
+
+    <meta proprrty="og:title" content="BMI Calculator" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og: description"
+      content="Simple bmi-calculator & article that explains the concept of Body Mass Index (BMI)"
+    />
+    <meta
+      property="og:url"
+      content="https://sofyahreksoftware.github.io/bmi-calculator/"
+    />
+    <meta
+      property="og:image"
+      content="https://i.postimg.cc/85h2cS4j/og-image.png"
+    />
+    <link rel="icon" href="https://i.postimg.cc/qBjrwsdw/BMI-icon.png" />
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/section.css" rel="stylesheet" />
+    <link href="css/article.css" rel="stylesheet" />
+    <link href="css/form.css" rel="stylesheet" />
+    <link href="css/navigation.css" rel="stylesheet" />
+    <link href="css/result.css" rel="stylesheet" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="icon" href="https://i.postimg.cc/qBjrwsdw/BMI-icon.png" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
       rel="stylesheet"
     />
+
     <link
       href="
 https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css
@@ -17,22 +43,14 @@ https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css
       rel="stylesheet"
     />
 
-    <link href="css/style.css" rel="stylesheet" />
-    <link href="css/section.css" rel="stylesheet" />
-    <link href="css/article.css" rel="stylesheet" />
-    <link href="css/form.css" rel="stylesheet" />
-    <link href="css/form.css" rel="stylesheet" />
-    <link href="css/navigation.css" rel="stylesheet" />
-    <link href="css/result.css" rel="stylesheet" />
-
     <script defer src="js/index.js"></script>
+
     <script
       type="text/javascript"
       id="MathJax-script"
       async
       src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"
     ></script>
-    <title>BMI-calculator</title>
   </head>
   <body>
     <nav class="navigation">
@@ -147,7 +165,6 @@ https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css
                 step="0.01"
                 placeholder="1,64"
                 required
-                value="1.64"
               />m</span
             > </label
           ><br />
@@ -162,8 +179,6 @@ https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css
                 type="number"
                 step="0.001"
                 placeholder="70,000"
-                required
-                value="55"
               />kg</span
             ></label
           >
