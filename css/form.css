@@ -72,11 +72,19 @@
   background-color: #4d0049;
   border-radius: 10px;
 }
+.form__button:hover {
+  scale: 1.05;
+  background-color: hsl(303, 100%, 35%) ;
+  transition: background-color 1s, scale 1s;
+}
 
 @media (max-width: 767px) {
   .form__button {
     width: 100%;
     text-align: center;
     padding: 5px auto;
+  }
+  .form__button:hover {
+    scale: 1.02;
   }
 }
