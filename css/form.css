@@ -1,12 +1,13 @@
 .form {
   padding: 30px auto;
   margin: 0 auto;
+  font-family: "Roboto Mono", monospace;
 }
 .form__fieldset {
   text-decoration: center;
-  -webkit-box-shadow: inset 4px -15px 38px 3px rgba(66, 68, 90, 1);
-  -moz-box-shadow: inset 4px -15px 38px 3px rgba(66, 68, 90, 1);
-  box-shadow: inset 4px -15px 38px 3px rgba(66, 68, 90, 1);
+  -webkit-box-shadow: 2px -1px 17px 9px rgba(77, 0, 73, 1);
+  -moz-box-shadow: 2px -1px 17px 9px rgba(77, 0, 73, 1);
+  box-shadow: 2px -1px 17px 9px rgba(77, 0, 73, 1);
   border-radius: 10px;
   padding: 30px;
 }
@@ -42,7 +43,7 @@
 .form__labelText {
   margin: 10px 0;
   flex: 1 1 auto;
-  color: hsl(300, 69%, 20%);
+  color: hsl(300, 69%, 15%);
 }
 
 .form__valueUnit {
@@ -74,7 +75,7 @@
 }
 .form__button:hover {
   scale: 1.05;
-  background-color: hsl(303, 100%, 35%) ;
+  background-color: hsl(303, 100%, 35%);
   transition: background-color 1s, scale 1s;
 }
 
