@@ -32,7 +32,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
       rel="stylesheet"
     />
-    
+
     <link
       href="
 https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css
@@ -76,6 +76,11 @@ https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css
             >BMI - interpretation</a
           >
         </li>
+        <li class="navigation__element">
+          <a class="navigation__link" href="#bmi-calculator">
+            BMI - calculator
+          </a>
+        </li>
       </ul>
     </nav>
 
@@ -83,119 +88,125 @@ https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css
       <h1>Unlocking Health Insights: Understanding Your BMI</h1>
     </header>
 
-    <section class="section" id="what-is-bmi">
-      <h2 class="section__header">Understanding BMI: Your Body Mass Index</h2>
-      <article class="article">
-        <p>
-          BMI, or <em>Body Mass Index</em>, is a fundamental tool used to assess
-          an individual's body weight in relation to their height. It provides a
-          numerical value that serves as an indicator of a person's overall body
-          composition. Understanding your BMI can be essential in monitoring and
-          managing your health. In this article, we will delve into the meaning
-          and importance of BMI, and encourage you to use the BMI calculator
-          provided below to gain insights into your own health status.
-        </p>
-      </article>
+    <main>
+      <section class="section">
+        <h2 class="section__header">Understanding BMI: Your Body Mass Index</h2>
+        <article class="article">
+          <h3 class="article__header" id="what-is-bmi">What is BMI?</h3>
+          <p>
+            BMI, or <em>Body Mass Index</em>, is a fundamental tool used to
+            assess an individual's body weight in relation to their height. It
+            provides a numerical value that serves as an indicator of a person's
+            overall body composition. Understanding your BMI can be essential in
+            monitoring and managing your health. In this article, we will delve
+            into the meaning and importance of BMI, and encourage you to use the
+            BMI calculator provided below to gain insights into your own health
+            status.
+          </p>
+        </article>
 
-      <article class="article" id="bmi-formula">
-        <h3 class="article__header">BMI formula</h3>
-        <p>
-          BMI stands for Body Mass Index, and it is a simple yet effective
-          method to determine whether your weight falls within a healthy range
-          for your height. It is calculated using a specific formula:
-          <strong class="article__highlighted">
-            \[ \text{BMI} = \frac{\text{weight(kg)}}{\text{height(m)}^2}\]
+        <article class="article" id="bmi-formula">
+          <h3 class="article__header">BMI formula</h3>
+          <p>
+            BMI stands for Body Mass Index, and it is a simple yet effective
+            method to determine whether your weight falls within a healthy range
+            for your height. It is calculated using a specific formula:
+            <strong class="article__highlighted">
+              \[ \text{BMI} = \frac{\text{weight(kg)}}{\text{height(m)}^2}\]
+            </strong>
+          </p>
+        </article>
+        <article class="article" id="bmi-interpretation">
+          <h3 class="article__header">How is BMI interpreted?</h3>
+          <p>
+            The result is a numerical value, and the interpretation of this
+            value is categorized into different ranges:
+          </p>
+
+          <ul>
+            <li class="article__listItem">
+              <span class="article__listItemText"
+                ><em>Underweight:</em> BMI less than 18.5</span
+              >
+            </li>
+            <li class="article__listItem">
+              <span class="article__listItemText"
+                ><em>Normal Weight:</em> BMI between 18.5 and 24.9</span
+              >
+            </li>
+            <li class="article__listItem">
+              <span class="article__listItemText"
+                ><em>Overweight:</em> BMI between 25 and 29.9
+              </span>
+            </li>
+            <li class="article__listItem">
+              <span class="article__listItemText"
+                ><em>Obese:</em> BMI of 30 or higher</span
+              >
+            </li>
+          </ul>
+
+          <strong class="article article__highlighted">
+            Keep in mind that while BMI is a useful screening tool, it doesn't
+            take into account other important factors such as muscle mass, bone
+            density, and distribution of fat. It is a general guideline rather
+            than a definitive measure of your health.
           </strong>
-        </p>
-      </article>
-      <article class="article" id="bmi-interpretation">
-        <h3 class="article__header">How is BMI interpreted?</h3>
-        <p>
-          The result is a numerical value, and the interpretation of this value
-          is categorized into different ranges:
-        </p>
+        </article>
+      </section>
 
-        <ul>
-          <li class="article__listItem">
-            <span class="article__listItemText"
-              ><em>Underweight:</em> BMI less than 18.5</span
+      <section class="section">
+        <h2 class="section__header" id="bmi-calculator">Calculate your BMI</h2>
+
+        <article class="article">
+          <p>
+            To find out your BMI, use the calculator below. Simply input your
+            weight and height, and it will instantly provide you with your BMI
+            value. Remember, while BMI is a valuable tool, it's just one piece
+            of the puzzle when it comes to your health. Consult with a
+            healthcare professional for a comprehensive assessment and guidance
+            on maintaining a healthy lifestyle.
+          </p>
+        </article>
+
+        <form class="form js-form">
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">BMI-calculator</legend>
+
+            <label class="form__label"
+              ><span class="form__labelText">Enter your height:</span>
+              <span class="form__valueUnit">
+                <input
+                  class="form__input js-height"
+                  name="height"
+                  type="number"
+                  step="0.01"
+                  placeholder="1,64"
+                  required
+                />m</span
+              > </label
+            ><br />
+
+            <label class="form__label js-result"
+              ><span class="form__labelText">Enter your weight:</span>
+              <span class="form__valueUnit">
+                <input
+                  class="form__input js-weight"
+                  required
+                  name="weight"
+                  type="number"
+                  step="0.001"
+                  placeholder="70,000"
+                />kg</span
+              ></label
             >
-          </li>
-          <li class="article__listItem">
-            <span class="article__listItemText"
-              ><em>Normal Weight:</em> BMI between 18.5 and 24.9</span
-            >
-          </li>
-          <li class="article__listItem">
-            <span class="article__listItemText"
-              ><em>Overweight:</em> BMI between 25 and 29.9
-            </span>
-          </li>
-          <li class="article__listItem">
-            <span class="article__listItemText"
-              ><em>Obese:</em> BMI of 30 or higher</span
-            >
-          </li>
-        </ul>
+          </fieldset>
 
-        <strong class="article__highlighted">
-          Keep in mind that while BMI is a useful screening tool, it doesn't
-          take into account other important factors such as muscle mass, bone
-          density, and distribution of fat. It is a general guideline rather
-          than a definitive measure of your health.
-        </strong>
-      </article>
-    </section>
-    <section class="section">
-      <h2 class="section__header">Calculate your BMI</h2>
-      <article class="article">
-        <p>
-          To find out your BMI, use the calculator below. Simply input your
-          weight and height, and it will instantly provide you with your BMI
-          value. Remember, while BMI is a valuable tool, it's just one piece of
-          the puzzle when it comes to your health. Consult with a healthcare
-          professional for a comprehensive assessment and guidance on
-          maintaining a healthy lifestyle.
-        </p>
-      </article>
-    </section>
+          <button class="form__button">Calculate!</button>
+        </form>
 
-    <section class="section">
-      <form class="form js-form">
-        <fieldset class="form__fieldset">
-          <legend class="form__legend">BMI-calculator</legend>
-
-          <label class="form__label"
-            ><span class="form__labelText">Enter your height:</span>
-            <span class="form__valueUnit">
-              <input
-                class="form__input js-height"
-                name="height"
-                type="number"
-                step="0.01"
-                placeholder="1,64"
-                required
-              />m</span
-            > </label
-          ><br />
-
-          <label class="form__label js-result"
-            ><span class="form__labelText">Enter your weight:</span>
-            <span class="form__valueUnit">
-              <input
-                class="form__input js-weight"
-                required
-                name="weight"
-                type="number"
-                step="0.001"
-                placeholder="70,000"
-              />kg</span
-            ></label
-          >
-        </fieldset>
-        <button class="form__button">Calculate!</button>
-      </form>
-      <p class="result js-resultLabel"></p>
-    </section>
+        <p class="result js-resultLabel"></p>
+      </section>
+    </main>
   </body>
 </html>

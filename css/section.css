@@ -6,9 +6,11 @@
   background-color: #f7f7f8;
   opacity: 0.9;
   border-radius: 10px;
+  max-width: 900px;
 }
 
 .section__header {
   text-align: left;
   color: #4d0049;
+  margin: 15px;
 }
