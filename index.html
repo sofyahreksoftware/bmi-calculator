@@ -40,6 +40,7 @@ https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css
       rel="stylesheet"
     />
     <link href="css/style.css" rel="stylesheet" />
+    <link href="css/burgerButton.css" rel="stylesheet" />
     <link href="css/section.css" rel="stylesheet" />
     <link href="css/article.css" rel="stylesheet" />
     <link href="css/form.css" rel="stylesheet" />
@@ -53,7 +54,8 @@ https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css
       rel="stylesheet"
     />
 
-    <script defer src="js/index.js"></script>
+    <script defer src="js/calculateResult.js"></script>
+    <script defer src="js/toggleVisibility.js"></script>
 
     <script
       type="text/javascript"
@@ -63,7 +65,13 @@ https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css
     ></script>
   </head>
   <body>
-    <nav class="navigation">
+    <button class="burgerButton js-burgerButton">
+      <div class="burgerButton--bar"></div>
+      <div class="burgerButton--bar"></div>
+      <div class="burgerButton--bar"></div>
+    </button>
+    
+    <nav class="navigation js-nav">
       <ul class="navigation__list">
         <li class="navigation__element">
           <a class="navigation__link" href="#what-is-bmi">BMI - meaning</a>
